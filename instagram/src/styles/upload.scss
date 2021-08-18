@@ -1,0 +1,64 @@
+@import "./properties";
+
+.upload{
+    display: flex;
+    border: 4px solid $border-color-grey;
+    top:50%;
+    left:50%;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    transform:translate(-50%, -50%);
+    height: 550px;
+    width: 900px;
+    
+    .image{
+        display:flex;
+        flex-direction: column;
+        height: 100%;
+        border-right: 1px solid $border-color-grey;
+        
+        .preview{
+            
+            margin-bottom:1em;
+            
+            img{
+                width: 540px;
+                max-height: 550px;
+                object-fit: contain;
+            }
+        }
+
+
+    }  
+
+    .write{
+        
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        input{
+            margin-bottom:1.3em;
+            margin-left:6em;
+           
+        }
+
+        textarea{
+            width:353px;
+            border: 1px solid $border-color-grey;
+            
+           
+        }
+
+        button{
+            margin-top: 5em;
+            
+            &:hover{
+                cursor:pointer;
+            }
+        }
+    }
+   
+}

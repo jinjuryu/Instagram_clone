@@ -1,0 +1,80 @@
+@import "./properties";
+.menu{
+    display: flex;
+    padding-right: 1.5em;
+    
+    //width: 222px;
+    .dropdown{
+        float: right;
+        vertical-align: baseline;
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        float:right;
+        z-index:2;
+        border-radius: 5px;
+        border:1px solid $border-color-grey;
+        position: absolute;
+        box-shadow: lightgray;
+    }
+    .dropdown:after {
+        margin-left: 1.3em;
+        content: '';
+        display: block;  
+        position: absolute;
+        margin-right:1.3em;
+        bottom: 100%;
+        width: 0;
+        height: 0;
+        border-bottom: 10px solid white;
+        
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+    }
+    li{
+        
+        width: 170px;
+        height: 28px;
+        padding: 8px 12px;
+        font-size: 14px;
+        border-bottom:transparent;
+    }
+    li:last-child{
+        border-top: 1px solid $border-color-grey;
+    }
+
+    li:hover{
+        background-color: $background-grey;
+        cursor: pointer;
+    }
+    
+    .icon{
+        
+        margin-left: 1.3em;
+        width: 22px;
+        height: 22px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    img{
+       
+        margin-left: 1.3em;
+        width: 22px;
+        height: 22px;
+    
+        &:hover{
+            cursor: pointer;
+        }
+        
+    }
+}

@@ -1,0 +1,117 @@
+@import "./properties";
+
+.container{
+    
+    .tooltip{
+        opacity: 1;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 390px;
+        height: 350px;
+        border-radius: 5%;
+        border: 1px $border-color-grey solid;
+        background-color: white;
+        box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
+       
+        .profile_1{
+            display: flex;
+            width:100%;
+            border-bottom: 1px solid $border-color-grey;
+            padding: 0.5em;
+            .namefield{
+                display: flex;
+                margin-left: 1em;
+                flex-direction: column;
+                flex:1;
+                .name{
+                    font-weight: 500;
+                    color: $font-color-primary;
+                    
+                }
+                .caption{
+                    margin-top:0.3em;
+                    color: $font-color-secondary;
+
+                
+                }   
+                .intro{
+                    margin-top:0.5em;
+                    color: $font-color-secondary;
+                }
+            
+                
+            }
+        }
+
+        .profile_2{
+            display: flex;
+            flex-direction: row;
+            color: $font-color-primary;
+            border-bottom: 1px solid $border-color-grey;
+            justify-content: space-between;
+            text-align: center;
+            padding-top: 1.2em;
+            padding-bottom: 1.2em;
+            font-weight: 500;
+            font-size: 1.1em;
+
+            label{
+                color: $font-color-secondary;
+            }
+
+            .post{
+                color: $font-color-primary;
+            
+                flex:1;
+                
+                
+            }
+            .follower{
+                color: $font-color-primary;
+            
+                flex:1;
+              
+            }
+            .follow{
+                flex:1;
+                color: $font-color-primary;
+            
+            }
+        }
+
+        .profile_3{
+            height:110px;
+            display: flex;
+            flex-direction: row;
+            flex:1;
+            border-bottom: 1px solid $border-color-grey;
+            
+            img{
+                overflow: hidden;
+                flex:1;
+                
+                width: 100%;
+                height:auto;
+            }
+        }
+        .profile_4{
+            align-items: center;
+            
+            button{
+                border: 1px $border-color-grey solid;
+                background-color: white;
+                border-radius: 5%;
+                padding-left: 3.5em;
+                padding-right: 3.5em;
+                padding-top: 0.3em;
+                padding-bottom: 0.3em;
+                margin: 1em;
+                
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

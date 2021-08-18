@@ -1,0 +1,28 @@
+@import "./properties";
+.container{
+    
+    .commentContainer{
+        display:flex;
+        font-size: 0.9em;
+        width: 93%;
+        .accountName{
+            font-weight: 700;
+            &:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+
+        .comment{
+            margin-left: 0.5em;
+        }
+    }
+    .likeContainer{
+        padding-right: 0.8em;
+        
+        &:hover{
+            cursor: pointer;
+            
+        }
+    }
+}

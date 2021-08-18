@@ -1,0 +1,84 @@
+@import "./properties";
+
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: $background-white;
+    border-bottom: 1px solid $border-color-grey;
+    height: 53px;
+
+    .container{
+        padding: 1em 0 0.9em 0;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        max-width: 975px;
+        margin: 0 auto;
+        
+        .Top_logo{
+            padding: 0 1em;
+            width: 100px;
+            
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        .search{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid $border-color-grey;
+            border-radius: 3px;
+            background-color: $background-grey;
+            min-width: 215px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:26px;
+            cursor: text;
+            input{
+                
+                margin-left:1em;
+                height: 100%;
+                border:none;
+                border-color: transparent;
+                //background-image : url("../image/searchIcon.png"); 
+                background-position:center; 
+                background-repeat:no-repeat;
+                outline: 0;
+            }
+            ::-webkit-input-placeholder {
+                text-align: center;
+            }
+            input:focus::-webkit-input-placeholder {
+                text-align: left;
+              }
+             
+            .searchIcon{
+                width: 10px;
+                opacity: 0.4;   //불투명도
+                margin-right: 0.3em;
+            }
+
+            .searchText{
+                color: $font-color-secondary;
+                font-size: 0.85em;
+                font-weight: 300;
+            }
+            
+            
+            
+        }
+
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .search {
+        display: none !important;
+    }
+}
